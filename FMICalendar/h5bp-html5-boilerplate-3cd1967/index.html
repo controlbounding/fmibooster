@@ -15,26 +15,57 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+            <head>
+        <title>Metro Style Calendar by Webtiago</title>
+        <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"> </script>
+        <script type="text/javascript">
+            $(document).ready(function()
+            {   
+                $("#ical").ical({
+                    /*beforeMonth:function(date)
+                    {
+                        $.ajax({
+                            type: "GET",
+                            url: "action.php",
+                            dataType: "json",
+                            data: "date="+date,
+                            async: false,
+                            success: function(json){
+                                $.fn.ical.changeEventDates(json); 
+                            }   
+                        })
+                    },*/
+                    //daynames: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+                    //startOnSunday: true,
+                    eventdates: [{"date": "2012-03-21", "title": "My birthday", "desc": "Its my birthday!"},
+                                 {"date": "yyyy-01-01", "title": "New Year", "desc": "Its a new year!"},
+                                 {"date": "2012-mm-01", "title": "New Month", "desc": "First day of the new month!"},
+                                 {"date": "2012-mm-01", "title": "New Month", "desc": "First day of the new month!"},
+                                 {"date": "2012-09-01", "title": "Convention", "desc": "September convention."}, 
+                                 {"date": "2012-09-02", "title": "Convention", "desc": "September convention day two."}, 
+                                 {"date": "2012-mm-01", "title": "Towl", "desc": "Dont forget to bring a towl."}    
+                                ]
+                });
+
+            });
+        </script>
+    </head>
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
-
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+         <div id="container">
+            <div id="ical"></div>
+        </div>
+        <script src="js/vendor/jquery-1.9.0.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
+        <script src="js/jquery-ical.js" type="text/javascript" charset="utf-8"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
+        <!-- <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
+        </script> -->
     </body>
 </html>

@@ -65,9 +65,15 @@
     <Content Include="Boilerplate\apple-touch-icon-precomposed.png" />
     <Content Include="Boilerplate\apple-touch-icon.png" />
     <Content Include="Boilerplate\crossdomain.xml" />
+    <Content Include="Boilerplate\css\main.css" />
+    <Content Include="Boilerplate\css\normalize.css" />
     <Content Include="Boilerplate\favicon.ico" />
     <Content Include="Boilerplate\humans.txt" />
     <Content Include="Boilerplate\index.html" />
+    <Content Include="Boilerplate\js\main.js" />
+    <Content Include="Boilerplate\js\plugins.js" />
+    <Content Include="Boilerplate\js\vendor\jquery-1.9.0.min.js" />
+    <Content Include="Boilerplate\js\vendor\modernizr-2.6.2.min.js" />
     <Content Include="Boilerplate\robots.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -82,6 +88,17 @@
     <Content Include="Boilerplate\CONTRIBUTING.md" />
     <Content Include="Boilerplate\LICENSE.md" />
     <Content Include="Boilerplate\README.md" />
+    <Content Include="Boilerplate\doc\crossdomain.md" />
+    <Content Include="Boilerplate\doc\css.md" />
+    <Content Include="Boilerplate\doc\extend.md" />
+    <Content Include="Boilerplate\doc\faq.md" />
+    <Content Include="Boilerplate\doc\htaccess.md" />
+    <Content Include="Boilerplate\doc\html.md" />
+    <Content Include="Boilerplate\doc\js.md" />
+    <Content Include="Boilerplate\doc\misc.md" />
+    <Content Include="Boilerplate\doc\TOC.md" />
+    <Content Include="Boilerplate\doc\usage.md" />
+    <Content Include="Boilerplate\img\.gitignore" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
